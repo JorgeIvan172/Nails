@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NailsStudio</string>
+    <string name="tv_1">Iniciar Sesion</string>
+    <string name="et_1">Your Email</string>
+    <string name="et_2">Password</string>
+    <string name="button_1">Login</string>
+    <string name="button_2">I dont Have Cunt</string>
+    <string name="logo">Logo.</string>
+    <string name="AgendarCitas">Agendar Citas.</string>
+    <string name="Citas">Citas.</string>
+</resources>
