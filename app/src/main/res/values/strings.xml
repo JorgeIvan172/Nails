@@ -6,6 +6,10 @@
     <string name="button_1">Login</string>
     <string name="button_2">I dont Have Cunt</string>
     <string name="logo">Logo.</string>
-    <string name="AgendarCitas">Agendar Citas.</string>
-    <string name="Citas">Citas.</string>
+
+
+    <string name="AgendarCitas">Agendar Cita.</string>
+    <string name="Citas">Tus Citas.</string>
+    <string name="ib_1">Calendario.</string>
+    <string name="ib_2">Uñas.</string>
 </resources>
