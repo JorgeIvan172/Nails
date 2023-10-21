@@ -2,6 +2,7 @@ package com.example.nailsstudio;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -38,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
         if(nombre.length() != 0 && passward.length() != 0){
             Toast.makeText(this,
                     "Login...", Toast.LENGTH_LONG).show();
+            Intent menu = new Intent(this, Menu.class);
+            startActivity(menu);
         }
+    }
+
+    public void SignIn(View view){
+        Intent cAccount = new Intent(this, CreateAccount.class);
+        startActivity(cAccount);
     }
 }
