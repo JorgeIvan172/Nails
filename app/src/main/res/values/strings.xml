@@ -6,8 +6,17 @@
     <string name="button_1">Login</string>
     <string name="button_2">I dont Have Cunt</string>
     <string name="logo">Logo.</string>
+
+
     <string name="AgendarCitas">Agendar Citas.</string>
     <string name="Citas">Citas.</string>
+    <string name="Corte">Corte.</string>
+    <string name="ib_calandario">Imagen de Calendario.</string>
+    <string name="ib_uñas">Imagen de Uñas.</string>
+    <string name="ib_corte">Imagen de Corte.</string>
+
+
+
     <string name="crearCuenta">Agregar Cuenta.</string>
     <string name="Nombre">Name.</string>
     <string name="cPassword">Confirm Password</string>

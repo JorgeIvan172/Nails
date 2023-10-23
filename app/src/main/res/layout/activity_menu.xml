@@ -10,10 +10,10 @@
         android:id="@+id/tv_AgendarCitas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="16dp"
         android:text="@string/AgendarCitas"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ib_1" />
 
@@ -21,37 +21,59 @@
         android:id="@+id/tv_Citas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Citas"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ib_2" />
 
     <ImageButton
         android:id="@+id/ib_1"
-        android:layout_width="176dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="111dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/ib_calandario"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/Calenario"
-        android:contentDescription="Imagen de Calendario"/>
+        app:srcCompat="@mipmap/Calenario" />
 
     <ImageButton
         android:id="@+id/ib_2"
-        android:layout_width="150dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="96dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/ib_uñas"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_AgendarCitas"
-        app:srcCompat="@mipmap/Nails"
-        android:contentDescription="Imagen de uñas"/>
+        app:srcCompat="@mipmap/Nails" />
 
+    <ImageButton
+        android:id="@+id/ib_3"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/ib_corte"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Citas"
+        app:srcCompat="@mipmap/corte" />
+
+    <TextView
+        android:id="@+id/tv_corte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Corte"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
