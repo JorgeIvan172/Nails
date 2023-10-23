@@ -8,4 +8,8 @@
     <string name="logo">Logo.</string>
     <string name="AgendarCitas">Agendar Citas.</string>
     <string name="Citas">Citas.</string>
+    <string name="crearCuenta">Agregar Cuenta.</string>
+    <string name="Nombre">Name.</string>
+    <string name="cPassword">Confirm Password</string>
+    <string name="createAccount">Create Account</string>
 </resources>
