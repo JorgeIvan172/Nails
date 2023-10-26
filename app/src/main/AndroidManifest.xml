@@ -13,11 +13,12 @@
         android:theme="@style/Theme.NailsStudio"
         tools:targetApi="31">
         <activity
-            android:name=".CreateAccount"
+            android:name=".Calendario_agregar"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".CreateAccount"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

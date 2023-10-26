@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et_1 = (EditText)findViewById(R.id.et_1);
-        et_2 = (EditText)findViewById(R.id.et_2);
+        et_1 = findViewById(R.id.et_1);
+        et_2 = findViewById(R.id.et_2);
     }
 
     //Método para el botón
@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,
                     "Debes de ingresar tu password", Toast.LENGTH_LONG).show();
         }
-        if(nombre.length() != 0 && passward.length() != 0){
+       /* if(nombre.length() != 0 && passward.length() != 0){
             Toast.makeText(this,
                     "Login...", Toast.LENGTH_LONG).show();
             Intent menu = new Intent(this, Menu.class);
             startActivity(menu);
-        }
+        }*/
     }
 
     public void SignIn(View view){

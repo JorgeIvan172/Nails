@@ -16,9 +16,12 @@
     <string name="ib_corte">Imagen de Corte.</string>
 
 
-
     <string name="crearCuenta">Agregar Cuenta.</string>
     <string name="Nombre">Name.</string>
     <string name="cPassword">Confirm Password</string>
     <string name="createAccount">Create Account</string>
+
+    <string name="tv_calendarioagregar">Seleccione Dia Para Agregar la Cita</string>
+    <string name="button_aceptar">Aceptar</string>
+    <string name="button_cancelar">Cancelar</string>
 </resources>
