@@ -10,11 +10,11 @@
         android:id="@+id/tv_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
         android:layout_marginTop="124dp"
         android:text="@string/tv_1"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,9 +22,9 @@
         android:id="@+id/iv_1"
         android:layout_width="130dp"
         android:layout_height="118dp"
-        android:layout_marginStart="140dp"
         android:layout_marginTop="28dp"
         android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_1"
         app:srcCompat="@drawable/nailsstudio_logo" />
@@ -33,7 +33,6 @@
         android:id="@+id/et_2"
         android:layout_width="278dp"
         android:layout_height="60dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
         android:autofillHints="email"
         android:ems="10"
@@ -41,6 +40,7 @@
         android:inputType="textPassword"
         android:textColorHint="#A1887F"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_1" />
 
@@ -48,10 +48,10 @@
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:layout_marginTop="40dp"
         android:onClick="Login"
         android:text="@string/button_1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_2" />
 
@@ -59,26 +59,29 @@
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
         android:layout_marginTop="16dp"
         android:onClick="SignIn"
         android:text="@string/button_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+        app:layout_constraintTop_toBottomOf="@+id/button_1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/et_1"
         android:layout_width="278dp"
         android:layout_height="64dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="28dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_1"
         android:inputType="textEmailAddress"
         android:textColorHint="#A1887F"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_1"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

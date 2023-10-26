@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.nailsstudio.ui.main.MainActivity_Menu;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText et_1, et_2;
@@ -36,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,
                     "Debes de ingresar tu password", Toast.LENGTH_LONG).show();
         }
-       /* if(nombre.length() != 0 && passward.length() != 0){
+       if(nombre.length() != 0 && passward.length() != 0){
             Toast.makeText(this,
                     "Login...", Toast.LENGTH_LONG).show();
-            Intent menu = new Intent(this, Menu.class);
+            Intent menu = new Intent(this, MainActivity_Menu.class);
             startActivity(menu);
-        }*/
+        }
     }
 
     public void SignIn(View view){
