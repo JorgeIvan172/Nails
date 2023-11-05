@@ -12,6 +12,7 @@
         android:layout_height="140dp"
         android:layout_marginTop="96dp"
         android:contentDescription="@string/ib_calandario"
+        android:onClick="Boton_agregar"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

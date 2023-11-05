@@ -24,4 +24,7 @@
     <string name="tv_calendarioagregar">Seleccione Dia Para Agregar la Cita</string>
     <string name="button_aceptar">Aceptar</string>
     <string name="button_cancelar">Cancelar</string>
+
+
+    <string name="sele_hora">Selecciona la hora</string>
 </resources>
