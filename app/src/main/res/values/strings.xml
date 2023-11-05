@@ -27,4 +27,9 @@
 
 
     <string name="sele_hora">Selecciona la hora</string>
+
+    <string name="detalles">Detalles de la cita</string>
+    <string name="detalles_nombre">Nombre del Cliente</string>
+    <string name="detalles_telefono">Telefono del Cliente</string>
+
 </resources>
