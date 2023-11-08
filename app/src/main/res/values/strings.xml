@@ -6,6 +6,7 @@
     <string name="button_1">Login</string>
     <string name="button_2">I dont Have Cunt</string>
     <string name="logo">Logo.</string>
+    <string name="cb_recuerdame">Recuerdame</string>
 
 
     <string name="AgendarCitas">Agendar Citas.</string>
@@ -38,5 +39,9 @@
     <string name="rb_gelish">Gelish</string>
     <string name="rb_pestañas">Pestañas</string>
     <string name="rb_pedicure">Pedicure</string>
+    <string name="tv_spinner">Metodo de pago</string>
+    <string name="sp_efectivo">Efectivo</string>
+    <string name="sp_tarjeta">Tarjeta de Credito/Debito</string>
+    <string name="sp_mixto">Tarjeta y Efectivo</string>
 
 </resources>
