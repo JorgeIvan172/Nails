@@ -24,6 +24,7 @@
     <string name="tv_calendarioagregar">Seleccione Dia Para Agregar la Cita</string>
     <string name="button_aceptar">Aceptar</string>
     <string name="button_cancelar">Cancelar</string>
+    <string name="button_guardar">Guardar</string>
 
 
     <string name="sele_hora">Selecciona la hora</string>
@@ -31,5 +32,11 @@
     <string name="detalles">Detalles de la cita</string>
     <string name="detalles_nombre">Nombre del Cliente</string>
     <string name="detalles_telefono">Telefono del Cliente</string>
+
+    <string name="texto_rb">Seleccione para que es la cita</string>
+    <string name="rb_acrilico">Uñas Acrilico</string>
+    <string name="rb_gelish">Gelish</string>
+    <string name="rb_pestañas">Pestañas</string>
+    <string name="rb_pedicure">Pedicure</string>
 
 </resources>
