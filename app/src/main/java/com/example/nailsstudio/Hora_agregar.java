@@ -23,7 +23,7 @@ public class Hora_agregar extends AppCompatActivity {
     }
 
     public void dar_aceptar2(View view){
-        int hour = timePicker.| getCurrentHour();
+        int hour = timePicker.getCurrentHour();
         int minute = timePicker.getCurrentMinute();
         String hora = hour + ":" + minute + "";
 
