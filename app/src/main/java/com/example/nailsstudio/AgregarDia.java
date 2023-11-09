@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
+import com.example.nailsstudio.ui.main.MainActivity_Menu;
+
 public class AgregarDia extends AppCompatActivity {
 
     private CalendarView cal;
@@ -37,6 +39,11 @@ public class AgregarDia extends AppCompatActivity {
         intent.putExtra("month", mes);
         intent.putExtra("day", dia);
         startActivity(intent);
+    }
+
+    public void darCancelar(View view){
+        Intent anterior =new Intent(this, MainActivity_Menu.class);
+        startActivity(anterior);
     }
 
 

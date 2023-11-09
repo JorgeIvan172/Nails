@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginBottom="188dp"
+        android:onClick="darCancelar"
         android:text="@string/button_cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

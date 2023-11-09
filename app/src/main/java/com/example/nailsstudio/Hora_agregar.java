@@ -1,6 +1,7 @@
 package com.example.nailsstudio;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewTreeViewModelKt;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.example.nailsstudio.ui.main.MainActivity_Menu;
 
 public class Hora_agregar extends AppCompatActivity {
 
@@ -42,6 +45,11 @@ public class Hora_agregar extends AppCompatActivity {
         intent.putExtra("hour", hour);
         intent.putExtra("minute", minute);
         startActivity(intent);
+    }
+
+    public void darCancelar2(View view){
+        Intent anterior =new Intent(this, AgregarDia.class);
+        startActivity(anterior);
     }
 
 
