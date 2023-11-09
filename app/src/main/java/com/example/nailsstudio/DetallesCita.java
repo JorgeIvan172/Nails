@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -14,7 +15,8 @@ public class DetallesCita extends AppCompatActivity {
 
     private EditText nombre_cliente, numero_cliente;
     private Spinner spinner1;
-    private RadioButton rb_gelish, rb_acrilico, rb_pestanas, rb_pedicure;
+    //private RadioButton rb_gelish, rb_acrilico, rb_pestanas, rb_pedicure;
+    private RadioGroup radioGroup;
 
 
     @Override
@@ -24,25 +26,28 @@ public class DetallesCita extends AppCompatActivity {
         nombre_cliente = findViewById(R.id.et_nombreCliente);
         numero_cliente = findViewById(R.id.editTextPhone);
 
-        rb_acrilico = findViewById(R.id.rb_acrilico);
+        /*rb_acrilico = findViewById(R.id.rb_acrilico);
         rb_gelish = findViewById(R.id.rb_gelish);
         rb_pestanas = findViewById(R.id.rb_pestanas);
         rb_pedicure = findViewById(R.id.rb_pedicure);
+         */
 
         spinner1 = findViewById(R.id.spinner);
         String [] opcionesPago={"Tarjeta", "Efectivo", "Efectivo y Tarjeta"};
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcionesPago);
         spinner1.setAdapter(adapter);
 
+        radioGroup = findViewById(R.id.radioGroup);
+
     }
 
     public void wardar(View view){
-        String nombreCliente = nombre_cliente.toString();
-        String numeroCliente = numero_cliente.toString();
+        String nombreCliente = nombre_cliente.getText().toString();
+        String numeroCliente = numero_cliente.getText().toString();
         String tipoCita = "";
         String tipoPago = spinner1.getSelectedItem().toString();
 
-        if (rb_acrilico.isChecked()){
+        /*if (rb_acrilico.isChecked()){
             tipoCita = rb_acrilico.toString();
         } else if (rb_gelish.isChecked()) {
             tipoCita = rb_gelish.toString();
@@ -50,10 +55,17 @@ public class DetallesCita extends AppCompatActivity {
             tipoCita = rb_pestanas.toString();
         }else if (rb_pedicure.isChecked()){
             tipoCita = rb_pedicure.toString();
+        }*/
+        int selectedRadioButtonId = radioGroup.getCheckedRadioButtonId();
+
+        if (selectedRadioButtonId != -1) {
+            RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
+            tipoCita = selectedRadioButton.getText().toString();
+        } else {
+            Toast.makeText(this,
+                    "Ingresa un tipo de cita"  , Toast.LENGTH_LONG).show();
         }
 
-        Toast.makeText(this,
-                "Cita Guardada Como:", Toast.LENGTH_LONG).show();
         Toast.makeText(this,
                 nombreCliente  +" "+ numeroCliente + " " + tipoCita +" " + tipoPago + " " + " Se ha Guardado", Toast.LENGTH_LONG).show();
     }
