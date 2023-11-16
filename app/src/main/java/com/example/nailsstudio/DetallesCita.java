@@ -104,7 +104,7 @@ public class DetallesCita extends AppCompatActivity {
         String horabd= hour + ":" + minute;
         String fechabd = year + "-" + month + "-" + day;
         int precio = 0;
-        String preciodb= z;
+        String preciodb= null;
         String duracion = null;
 
         if(tipoCita=="Uñas Acrilico") {
