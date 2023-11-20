@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.nailsstudio.AgregarDia;
+import com.example.nailsstudio.BuscarDia;
+import com.example.nailsstudio.CitasActivity;
 import com.example.nailsstudio.R;
 
 public class MainActivity_Menu extends AppCompatActivity {
@@ -22,5 +24,11 @@ public class MainActivity_Menu extends AppCompatActivity {
     public void Boton_agregar(View view){
         Intent b_agregar = new Intent(this, AgregarDia.class);
         startActivity(b_agregar);
+    }
+
+
+    public void BotonCitas(View view){
+        Intent intent = new Intent(this, BuscarDia.class);
+        startActivity(intent);
     }
 }

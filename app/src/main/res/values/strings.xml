@@ -44,4 +44,8 @@
     <string name="sp_tarjeta">Tarjeta de Credito/Debito</string>
     <string name="sp_mixto">Tarjeta y Efectivo</string>
 
+
+    <string name="buascarDia">Seleccione el dia para buscar Citas</string>
+    <string name="button_buscar">Buscar</string>
+
 </resources>

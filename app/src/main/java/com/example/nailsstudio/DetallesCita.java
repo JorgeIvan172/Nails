@@ -14,6 +14,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.nailsstudio.ui.main.MainActivity_Menu;
+
 public class DetallesCita extends AppCompatActivity {
 
     private EditText nombre_cliente, numero_cliente;
@@ -141,7 +143,8 @@ public class DetallesCita extends AppCompatActivity {
 
         Toast.makeText(this,
                 "Se ha guardado la cita"  , Toast.LENGTH_LONG).show();
-
+        Intent i = new Intent(this, MainActivity_Menu.class);
+        startActivity(i);
 
     }
 

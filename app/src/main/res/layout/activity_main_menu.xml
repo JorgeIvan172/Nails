@@ -26,6 +26,7 @@
         android:layout_height="144dp"
         android:layout_marginTop="44dp"
         android:contentDescription="@string/ib_uñas"
+        android:onClick="BotonCitas"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
