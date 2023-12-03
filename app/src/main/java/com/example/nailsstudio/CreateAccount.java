@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class CreateAccount extends AppCompatActivity {
 
     private EditText etnombre, etemail, etpassword, etcpassword;
@@ -22,6 +23,8 @@ public class CreateAccount extends AppCompatActivity {
         etemail = (EditText) findViewById(R.id.et_email);
         etpassword = (EditText) findViewById(R.id.et_password);
         etcpassword = (EditText) findViewById(id.et_cpassword);
+
+
     }
 
 
@@ -31,6 +34,8 @@ public class CreateAccount extends AppCompatActivity {
         String email = etemail.getText().toString();
         String password = etpassword.getText().toString();
         String cpassword = etcpassword.getText().toString();
+
+
 
 
         //Si alguno de los campos esta vacio te pide que los llene

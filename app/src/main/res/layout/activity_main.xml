@@ -51,21 +51,12 @@
         android:layout_marginTop="16dp"
         android:onClick="Login"
         android:text="@string/button_1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <Button
-        android:id="@+id/button_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="12dp"
-        android:onClick="SignIn"
-        android:text="@string/button_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.136" />
 
     <EditText
         android:id="@+id/et_1"
@@ -98,13 +89,10 @@
         android:layout_width="39dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:contentDescription="abreWeb"
         android:onClick="Info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_2"
-        app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@android:drawable/ic_dialog_info"
         tools:ignore="HardcodedText,ImageContrastCheck,TouchTargetSizeCheck" />
 
