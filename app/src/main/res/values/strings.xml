@@ -48,4 +48,9 @@
     <string name="buascarDia">Seleccione el dia para buscar Citas</string>
     <string name="button_buscar">Buscar</string>
 
+
+
+    <string name="Tv_Corte">Corte de caja</string>
+    <string name="Selecciona">Selecciona la fecha con el boton</string>
+
 </resources>

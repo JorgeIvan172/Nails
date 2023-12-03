@@ -43,7 +43,7 @@ public class Hora_agregar extends AppCompatActivity {
         // Verificar si hay citas existentes en el rango de tiempo seleccionado
         if (!citasSeSobreponen(year, month, day, hour, minute)) {
             // No hay citas que se sobrepongan, puedes agregar la nueva cita
-            Toast.makeText(this, "Cita programada: " + fechaHora, Toast.LENGTH_SHORT).show();
+
 
             // Crear una nueva intención para pasar la fecha y hora seleccionadas a la siguiente actividad
             Intent intent = new Intent(this, DetallesCita.class);
@@ -52,6 +52,7 @@ public class Hora_agregar extends AppCompatActivity {
             intent.putExtra("day", day);
             intent.putExtra("hour", hour);
             intent.putExtra("minute", minute);
+            Toast.makeText(this, "Cita programada: " + fechaHora, Toast.LENGTH_SHORT).show();
             startActivity(intent);
         } else {
             // Hay citas que se sobreponen, mostrar un mensaje de error

@@ -109,21 +109,25 @@ public class DetallesCita extends AppCompatActivity {
         String preciodb= null;
         String duracion = null;
 
-        if(tipoCita=="Uñas Acrilico") {
+        if("Uñas Acrilico".equals(tipoCita)) {
             precio=240;
             duracion="90";
-        } else if (tipoCita=="Gelish") {
+            preciodb = precio+"";
+        } else if ("Gelish".equals(tipoCita)) {
          precio=85;
          duracion = "45";
-        } else if (tipoCita=="Pestañas") {
+         preciodb = precio+"";
+        } else if ("Pestañas".equals(tipoCita)) {
             precio=400;
             duracion = "90";
-        } else if (tipoCita=="Pedicure") {
+            preciodb = precio+"";
+        } else if ("Pedicure".equals(tipoCita)) {
             precio=250;
             duracion = "60";
+            preciodb = precio+"";
         }
 
-        preciodb = precio+"";
+
 
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"Administracion", null, 1);
         SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();

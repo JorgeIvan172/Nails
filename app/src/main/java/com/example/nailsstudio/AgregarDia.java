@@ -25,7 +25,7 @@ public class AgregarDia extends AppCompatActivity {
         cal = findViewById(R.id.calendarView2);
 
         cal.setOnDateChangeListener((view, year,month, dayOfMonth)->{
-            fecha = dayOfMonth + "/" + (month+1) +  "/" + year;
+            fecha = dayOfMonth + "-" + (month+1) +  "-" + year;
             dia = dayOfMonth;
             mes = month;
             anio = year;
