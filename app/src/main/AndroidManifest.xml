@@ -15,6 +15,9 @@
         android:theme="@style/Theme.NailsStudio"
         tools:targetApi="31">
         <activity
+            android:name=".VerActivity"
+            android:exported="false" />
+        <activity
             android:name=".TotalVentasActivity"
             android:exported="false" />
         <activity

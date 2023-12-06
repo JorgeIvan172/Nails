@@ -49,8 +49,18 @@
     <string name="button_buscar">Buscar</string>
 
 
-
     <string name="Tv_Corte">Corte de caja</string>
     <string name="Selecciona">Selecciona la fecha con el boton</string>
 
+
+
+
+
+    <string name="txt_codigo">Codigo del producto</string>
+    <string name="txt_descripcion">Descripcion del producto</string>
+    <string name="txt_precio">Precio del Producto</string>
+    <string name="BotonRegistrar">Registrar Producto</string>
+    <string name="BotonBuscar">Buscar Producto</string>
+    <string name="BotonEliminar">Eliminar Producto</string>
+    <string name="BotonModificar">Modificar Producto</string>
 </resources>
