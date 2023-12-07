@@ -73,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="36dp"
+        android:onClick="Modificar"
         android:text="@string/BotonModificar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
@@ -83,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="36dp"
+        android:onClick="Eliminar"
         android:text="@string/BotonEliminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button12" />

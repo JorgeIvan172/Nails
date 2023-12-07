@@ -12,6 +12,7 @@ import com.example.nailsstudio.BuscarDia;
 import com.example.nailsstudio.CitasActivity;
 import com.example.nailsstudio.R;
 import com.example.nailsstudio.TotalVentasActivity;
+import com.example.nailsstudio.VerActivity;
 
 public class MainActivity_Menu extends AppCompatActivity {
     private ImageButton imageButton4;
@@ -21,9 +22,10 @@ public class MainActivity_Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         ImageButton imageButton4 = findViewById(R.id.imageButton4);
-        imageButton4.setVisibility(View.GONE);
 
-        //ola m
+        //imageButton4.setVisibility(View.GONE);
+
+
     }
 
     public void Boton_agregar(View view){
@@ -38,8 +40,8 @@ public class MainActivity_Menu extends AppCompatActivity {
     }
 
 
-    public void irATotalVentasActivity(View view) {
-        Intent intent = new Intent(this, TotalVentasActivity.class);
+    public void IrABaseDeDatos(View view) {
+        Intent intent = new Intent(this, VerActivity.class);
         startActivity(intent);
     }
 }

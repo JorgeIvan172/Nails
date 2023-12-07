@@ -73,5 +73,57 @@ public class VerActivity extends AppCompatActivity {
         }
     }
 
+    public void Eliminar(View view){
+        AdminSQLiteOpenHelper2 admin = new AdminSQLiteOpenHelper2(this, "Administracion2", null, 1);
+        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
+
+        String codigo = et_codigo.getText().toString();
+
+        if (!codigo.isEmpty()){
+            int cantidad = BaseDeDatos.delete("articulos", "codigo="+codigo,null);
+            BaseDeDatos.close();
+
+            et_codigo.setText("");
+            et_descripcion.setText("");
+            et_precio.setText("");
+
+            if (cantidad==1){
+                Toast.makeText(this, "El articulo se elimino de manera exitosa", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, "El articulo no existe", Toast.LENGTH_SHORT).show();
+            }
+        }else {
+            Toast.makeText(this, "Debes introducir el codigo del producto a eliminar", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void Modificar(View view){
+        AdminSQLiteOpenHelper2 admin = new AdminSQLiteOpenHelper2(this, "Administracion2", null, 1);
+        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
+        String codigo = et_codigo.getText().toString();
+        String descripcion = et_descripcion.getText().toString();
+        String precio = et_precio.getText().toString();
+
+        if (!codigo.isEmpty() && !descripcion.isEmpty() && !precio.isEmpty()){
+            ContentValues registro = new ContentValues();
+            registro.put("codigo", codigo);
+            registro.put("descripcion", descripcion);
+            registro.put("precio", precio);
+
+            int cantidad = BaseDeDatos.update("articulos", registro, "codigo="+ codigo, null);
+
+            BaseDeDatos.close();
+
+            if (cantidad==1){
+                Toast.makeText(this, "Se modificaron los datos", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, "El articulo no existe", Toast.LENGTH_SHORT).show();
+            }
+
+        }else {
+            Toast.makeText(this, "Debes llenar los campos", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
 }
